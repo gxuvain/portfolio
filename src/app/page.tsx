@@ -1,9 +1,7 @@
-import Grid from "@/components/Grid";
+import { Grid } from "@/components/Grid";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
-import Image from "next/image";
-import { FaHome } from "react-icons/fa";
 
 export default function Home() {
     return (
@@ -12,6 +10,11 @@ export default function Home() {
                 <FloatingNav navItems={navItems} />
                 <Hero />
                 <Grid />
+                <footer>
+                    <p className="text-center text-white/50 mt-10">
+                        © 2021 Gauvain Palanga. All rights reserved.
+                    </p>
+                </footer>
             </div>
         </main>
     );
